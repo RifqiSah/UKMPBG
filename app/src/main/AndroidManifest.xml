@@ -42,13 +42,6 @@
         android:supportsRtl="true"
         android:theme="@style/Sikbk">
 
-        <service
-            android:name="com.alriftech.ukmpbg.LocationService"
-            android:enabled="true" />
-        <service
-            android:name="com.alriftech.ukmpbg.InternetService"
-            android:enabled="true" />
-
         <uses-library android:name="com.google.android.maps" />
 
         <meta-data
@@ -59,13 +52,6 @@
             android:value="AIzaSyAY1H3285BgEWGnzY5OnL7SLkt7KHF0b8c" />
 
         <!-- Activity -->
-        <activity
-            android:name="com.alriftech.ukmpbg.DummyActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
         <activity
             android:name="com.alriftech.ukmpbg.SplashActivity"
             android:theme="@style/Sikbk.NoActionBar">
@@ -83,88 +69,6 @@
         <activity
             android:name="com.alriftech.ukmpbg.DashboardActivity"
             android:label="Beranda" />
-        <activity
-            android:name="com.alriftech.ukmpbg.DetailLowonganActivity"
-            android:label="Detail Pekerjaan"
-            android:theme="@style/Sikbk.WhiteActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DashboardActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.DaftarLowonganActivity"
-            android:label="Lamar Pekerjaan">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DetailLowonganActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.UserProfileActivity"
-            android:label="@string/act_user_details"
-            android:theme="@style/Sikbk.WhiteActionBar"
-            android:windowSoftInputMode="stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DashboardActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.TambahKantorActivity"
-            android:label="Tambah Kantor">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DashboardActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.MapActivity"
-            android:label="Pilih Lokasi">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.TambahKantorActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.TambahLowonganActivity"
-            android:label="Tambah Lowongan">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DashboardActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.TambahKetuaActivity"
-            android:label="Tambah Ketua">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DashboardActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.DetailLowonganKantorActivity"
-            android:label="Pelamar Lowongan">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DashboardActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.DetailPelamarActivity"
-            android:label="Detail Pelamar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DetailLowonganKantorActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.DetailPelamarUserActivity"
-            android:label="Detail Pelamar"
-            android:theme="@style/Sikbk.WhiteActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DetailPelamarActivity" />
-        </activity>
-        <activity
-            android:name="com.alriftech.ukmpbg.DetailUsersActivity"
-            android:label="Informasi User"
-            android:theme="@style/Sikbk.WhiteActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alriftech.ukmpbg.DashboardActivity" />
-        </activity>
     </application>
 
 </manifest>

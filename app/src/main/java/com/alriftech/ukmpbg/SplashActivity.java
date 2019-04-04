@@ -29,10 +29,8 @@ public class SplashActivity extends AppCompatActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         core = new Core(this);
-        sp = getSharedPreferences("SIKBK", MODE_PRIVATE);
+        sp = getSharedPreferences("UKMPBG", MODE_PRIVATE);
         setContentView(R.layout.activity_splash);
-
-        startService(new Intent(this, InternetService.class));
 
         if (core.cekInternet())
             cekVersi();
@@ -150,8 +148,8 @@ public class SplashActivity extends AppCompatActivity {
                 int vCode = jobj.getInt("versionCode");
                 String vName = jobj.getString("versionName");
 
-                Log.d("SikbkLog", "Local version: " + verName);
-                Log.d("SikbkLog", "Online version: " + vName);
+                Log.d("UkmpbgLog", "Local version: " + verName);
+                Log.d("UkmpbgLog", "Online version: " + vName);
 
                 TextView txtVersion = findViewById(R.id.txtVersion);
                 txtVersion.setText("Version " + verName);
@@ -162,5 +160,9 @@ public class SplashActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static class UKMAdapter {
+
     }
 }

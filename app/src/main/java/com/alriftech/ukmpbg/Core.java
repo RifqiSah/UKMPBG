@@ -31,7 +31,7 @@ import java.util.Date;
 public class Core {
 
     private static Context ctx;
-    private static String CHANNEL_ID = "SIKBK_NOTIFICATION_CHANNEL";
+    private static String CHANNEL_ID = "UKMPBG_NOTIFICATION_CHANNEL";
 
     private void createNotificationChannel() {
         // Create the NotificationChannel, but only on API 26+ because
