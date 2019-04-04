@@ -49,26 +49,32 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAY1H3285BgEWGnzY5OnL7SLkt7KHF0b8c" />
-
-        <!-- Activity -->
+            android:value="AIzaSyAY1H3285BgEWGnzY5OnL7SLkt7KHF0b8c" /> <!-- Activity -->
         <activity
-            android:name="com.alriftech.ukmpbg.SplashActivity"
+            android:name=".SplashActivity"
             android:theme="@style/Sikbk.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.alriftech.ukmpbg.LoginActivity"
+            android:name=".LoginActivity"
             android:theme="@style/Sikbk.NoActionBar" />
         <activity
-            android:name="com.alriftech.ukmpbg.RegisterActivity"
+            android:name=".RegisterActivity"
             android:theme="@style/Sikbk.NoActionBar" />
         <activity
-            android:name="com.alriftech.ukmpbg.DashboardActivity"
+            android:name=".DashboardActivity"
             android:label="Beranda" />
+        <activity
+            android:name=".DetailUKMActivity"
+            android:label="Detail UKM">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity" />
+        </activity>
     </application>
 
 </manifest>
